@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./CSS/main.css">
+
+    </head>
+
+    <body>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		
+    <!--p id="demo"></p>
+    <script>
+      let carName1 = "Volvo XC60";
+      let carName2 = "Volvo XC60";
+      document.getElementById("demo").innerHTML= carName1 + "<br>"+ carName2;
+
+    </script>
+
+    <p id="demo2"></p>
+    <script>
+      const cars=["mazda","BMW","audi"];
+      document.getElementById("demo2").innerHTML=cars[2];
+
+    </script>
+
+    <p id="demo3"></p>
+
+    <script>
+      document.getElementById("demo3").innerHTML=
+      typeof 0 +"<br>" +
+       typeof "jon" +"<br>";
+    </script>
+
+    <p id="demo4"></p>
+    <script>
+      var x= myfunction(4,5);
+      document.getElementById("demo4").innerHTML=x;
+      function myfunction(a,b){
+        return a*b;
+      }
+    </script-->
+
+<p id="demo"></p>
+
+<script>
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-15);
+document.getElementById("demo").innerHTML = part; 
+</script>
+<p id="demo11"></p> 
+<button
+    onclick="document.getElementById('demo11').innerHTML=Date()">THe time is?
+  </button>
+
+  <button onclick="this.innerHTML=Date()">
+    The time is?
+  </button>
+
+  <p id="demo22"></p>
+  <script>
+    let x="John";
+
+    let y=new String("john");
+    
+    document.getElementById('demo22').innerHTML= typeof x +"</br>"+typeof y;
+  </script>
+
+  <!--how it get boolean value-->
+
+  <!--p id="demo23"></p>
+  <script>
+    let x1="john";
+    let y1=new String("john");
+        document.getElementById("demo23").innerHTML=(x1==y1);
+  </script-->
+   
+
+  <p id="demo24">Please visit MicrOsoft</p>
+<button onclick="myfunction()">Try it</button>
+
+  <script>
+    function myfunction(){
+      let x2=document.getElementById('demo24').innerHTML;
+      document.getElementById("demo24").innerHTML= x2.replace(/Microsoft/i,"W3school");
+
+    }
+    
+
+    
+
+  </script>
+
+<p id="demo25"></p>
+
+<script>
+  let text1= "I love cats. Cats are very easy to love. Cats are very populer."
+  text1 = text1.replaceAll(/Cats/g,"Dogs");
+  text1 = text1.replaceAll(/cats/g,"dogs");
+
+  document.getElementById("demo25").innerHTML = text1;
+</script>
+
+<!--script>
+  let text1 = "I love cats. Cats are very easy to love. Cats are very popular."
+  text1 = text1.replaceAll("Cats","Dogs");
+  text1 = text1.replaceAll("cats","dogs");
+  
+  document.getElementById("demo25").innerHTML = text1;
+  </script-->
+
+
+  <p id="demo26"></p>
+  <script>
+    let text4="Please locate where locate occurs!";
+    let index=text4.lastIndexOf("locate");
+    document.getElementById("demo26").innerHTML=index;
+  </script>
+
+  <!--p id="demo27"></p>
+  <script>
+    let text5="        Hello world!";
+    let text6=text5.trim();
+
+    document.getElementById("demo27").innerHTML="Length text1 = "
+    text5.length+"<br> Length text2= "+text6.lenght;
+  </script-->
+
+
+  <p id="demo27"></p>
+
+<script>
+let text5 = "     Hello World!     ";
+let text6 = text5.trim();
+
+document.getElementById("demo27").innerHTML =
+"Length text1 = " + text1.length + "<br>Length text2 = " + text2.length;
+</script>
+
+
+  <source src="js/bootstrap.min.js" type="">
+  </body>
+
+ 
+</html>
+
+
+
